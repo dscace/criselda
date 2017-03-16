@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>High Priestess Salon</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Karla|Space+Mono" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <a href="/index"><h1 class="site">HIGH PRIESTESS</h1></a>
+    <h3 class="salon">SALON</h3>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a class="hair" href="/hair">HAIR</a></li>
+          <li><a href="/brows">BROWS</a></li>
+          <li><a href="https://www.solasalonstudios.com/salon-professional/criselda-cox1#" target="_blank">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+  	<div class="container">
+    	<%= yield %>
+    </div>
+  </body>
+</html>
